@@ -20,7 +20,14 @@ btn.addEventListener('click', () => {
   wrapper.style.backgroundColor = wrapperColor;
   header.style.color = headerColor;
   btn.style.backgroundColor = btnColor;
-  btn.textContent = 'this is btn color - ' + btnColor;
+
+  let html;
+  html = `
+        <span>RGB color</span>
+        <span>of this button</span>
+        <span>${btnColor}</span>    
+    `;
+  btn.innerHTML = html;
 });
 
 const colors = [
