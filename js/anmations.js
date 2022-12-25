@@ -1,3 +1,4 @@
+// creating array from h2 textSplit class
 let arr = Array.from(document.querySelectorAll('.textSplit'));
 
 /* console.log('array of texts: ' + arr); */
@@ -7,6 +8,11 @@ let winHeight = window.innerHeight;
 window.addEventListener('resize', function () {
   winHeight = window.innerHeight;
 }); */
+
+/* using interSection observer to check if text
+is on screen, then manipulating texts
+taking classes from parent element and adding to each span that is created in the forEach Loop lower down, i have to split to more functinos i think, still learning
+ */
 
 const observer = new IntersectionObserver(
   (entries) => {
@@ -36,10 +42,11 @@ const observer = new IntersectionObserver(
   },
   {
     threshold: 1,
-    rootMargin: '50px',
+    rootMargin: '10px',
   }
 );
 
+// getting array of
 arr.forEach((a) => {
   let textLineArr = a.textContent.split(' ');
 
@@ -82,6 +89,7 @@ function replaceClass(classN, newClassN) {
   target.className = newClassN;
 }
 
+/* Im no using the below sollutions but i kept some of the stuff I found working on this animations code */
 /* 
 "http://stackoverflow.com/questions/11115998" StackOverflow question : Using classList add and classlist remove with several classes
  */
