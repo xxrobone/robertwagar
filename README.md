@@ -1,6 +1,8 @@
 # PORTFOLIO
 ## Assignment - 5
 
+(this project is a pure html, css vanilla js / jquery project, i start with mobile first so if it looks strange I havent worked on desktop yet, i will change this many times, so check back later if it looks awefull)
+
 So our 5th assignment is to create a portfolio
 so i've gathered everything i learned and 
 tried out so far
