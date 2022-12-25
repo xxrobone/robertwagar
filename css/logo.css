@@ -1,5 +1,5 @@
 .logo {
-    position: fixed;
+    position: absolute;
     top: 8vh;
     left: 0;    
     height: 125px;
@@ -7,7 +7,7 @@
     transition-delay: 0.5s;
     transition: all 1s ease;
     perspective: 30em;
-    z-index: 1000;
+    z-index: 20;
   }
 
   .card {
