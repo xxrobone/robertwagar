@@ -1,9 +1,8 @@
-const open = document.querySelector('.openBtn');
+/* const open = document.querySelector('.openBtn');
 const close = document.querySelector('.closeBtn');
 const menu = document.querySelector('nav');
 const headline = document.querySelector('h1');
 
-// for the open close button
 console.log('connected');
 open.addEventListener('click', () => {
   console.log('clicked');
@@ -19,7 +18,7 @@ close.addEventListener('click', () => {
   close.style.visibility = 'hidden';
   menu.style.transform = 'translateX(110%)';
 });
-
+ */
 // for the text effect in the hero section 
 const lines = document.querySelectorAll('.text');
 let currIdx = 0;

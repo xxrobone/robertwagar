@@ -4,7 +4,7 @@
 @import url('../typography.css');
 
 
-#projects_page line {
+.hamburger .openBtn .line {
   background-color: #121212;
 }
 
