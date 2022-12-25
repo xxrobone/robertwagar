@@ -1,0 +1,78 @@
+.hamburger {
+    display: none;
+  }
+  
+  
+  /* ========== HAMBURGER NAV BUTTON ====================== */
+   
+  
+  /* ========== HAMBURGER NAV BUTTON ====================== */
+   .hamburger {
+    display: block;
+    position: fixed;
+    right: 1rem;
+    left: auto;
+    top: 120px;
+    width: 46px;
+    height: 32px;
+    transform: all 1s ease-in-out;
+    z-index: 1000;
+  }
+  
+  .openBtn {
+    position: absolute;
+    padding: 2px;
+    width: 32px;
+    height: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transform: all 1s ease-in-out;
+  }
+  
+  .line {
+    position: relative;
+    width: 100%;
+    height: 2px;
+    background-color: #fafafa;
+  }
+  
+  .closeBtn {
+    position: absolute;
+    padding: 2px;
+    width: 32px;
+    height: 24px;
+    display: flex;
+    visibility: hidden;
+    transform: all 0.8s ease-in-out;
+  }
+  
+  .lineC {
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    width: 80%;
+    height: 2px;
+    background-color: tomato;
+  }
+  
+  .line1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+  }
+  
+  .line2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+  } 
+  
+  @media screen and (min-width: 768px) {
+    .hamburger {
+      display: none;
+  }
+}
