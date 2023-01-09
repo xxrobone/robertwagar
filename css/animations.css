@@ -16,12 +16,12 @@
 }
 span,
 span.textSplit {
-    color: rgb(177, 177, 177);
+    color: goldenrod;
     font-weight: 700;
 }
 
 span:nth-child(even) {
-    color:#5f5f5f;
+    color:#323232;
 }
 
 /* Slide Animations */
@@ -102,3 +102,4 @@ padding:0 10px;
 100% {background-position:left bottom;}
 
 }
+

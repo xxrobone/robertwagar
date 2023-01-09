@@ -1,39 +1,64 @@
-/* const open = document.querySelector('.openBtn');
-const close = document.querySelector('.closeBtn');
-const menu = document.querySelector('nav');
-const headline = document.querySelector('h1');
+console.log('js connected');
+let intro = document.querySelector('.intro');
 
-console.log('connected');
-open.addEventListener('click', () => {
-  console.log('clicked');
-  open.style.visibility = 'hidden';
-  close.style.visibility = 'visible';
-  close.style.transform = 'rotate(90deg)';
-  menu.style.transform = 'translateX(0%)';
+const timeline = anime.timeline({
+  targets: '.intro',
+  duration: 3000,
+  easing: 'easeOutSine',
 });
+timeline
+  .add({
+    scale: [0, 1],
+    duration: 1400,
+  })
+  .add({
+    targets: '.loading',
+    opacity: [0, 1],
+    width: ['0', '30vw'],
+    duration: 2000,
+    delay: 100,
+    innerHTML: [0, 100 + '%'],
+    round: 10,
+  })
+  .add({
+    targets: '.intro_head',
+    translateY: ['-100vh', '0'],
+    delay: 100,
+    duration: 500,
+  })
+  .add({
+    targets: '.intro_subhead',
+    translateY: ['-100vh', '0'],
+    delay: 100,
+    duration: 500,
+  })
+  .add({
+    targets: '.main',
+    duration: 1000,
+    opacity: [0, 1],
+  })
+  .add({
+    delay: 500,
+    translateY: '-100vh',
+    duration: 1000,
+    complete: function () {
+      intro.remove();
+    },
+  });
 
-close.addEventListener('click', () => {
-  console.log('clicked close');
-  open.style.visibility = 'visible';
-  close.style.visibility = 'hidden';
-  menu.style.transform = 'translateX(110%)';
+const navline = anime.timeline({
+  targets: '.nav',
+  duration: 1500,
+  easing: 'easeOutSine',
 });
- */
-// for the text effect in the hero section 
-const lines = document.querySelectorAll('.text');
-let currIdx = 0;
-
-function animateNextLine() {
-  lines.forEach((t) => (t.style.display = 'none'));
-  currIdx = currIdx % lines.length;
-
-  lines[currIdx].style.animation = 'text-animation 3s';
-  lines[currIdx].style.animationDirection = 'alternate';
-
-  lines[currIdx].style.display = 'block';
-  currIdx++;
-
-  setTimeout(animateNextLine, 3000);
-}
-
-animateNextLine();
+navline
+  .add({
+    opacity: [0, 1],
+    delay: 2000,
+  })
+  .add({
+    targets: '.nav ul li',
+    translateY: ['-30vh', '0'],
+    delay: anime.stagger(200),
+    opacity: [0, 1],
+  });

@@ -19,13 +19,13 @@ const observer = new IntersectionObserver(
     entries.forEach((entry) => {
       let trgt = entry.target.className;
       trgt = '';
-      console.log('e target className: ' + trgt);
-      console.log('after change: ' + entry.target.classList);
+      /*  console.log('e target className: ' + trgt);
+      console.log('after change: ' + entry.target.classList); */
       for (const child of entry.target.children) {
         if (entry.isIntersecting) {
           child.classList.add('animate');
           child.classList.remove('stop');
-          console.log('is intersecting child elem class: ' + child.classList);
+          /*  console.log('is intersecting child elem class: ' + child.classList); */
 
           /* entry.target.classList.add('slideInLeft'); */
         } else {
@@ -50,12 +50,12 @@ const observer = new IntersectionObserver(
 arr.forEach((a) => {
   let textLineArr = a.textContent.split(' ');
 
-  console.log(textLineArr);
+  /* console.log(textLineArr); */
 
   let html = '';
 
   let animation = a.classList;
-  console.log('animation class list: ' + animation);
+/*   console.log('animation class list: ' + animation); */
 
   for (i = 0; i < textLineArr.length; ++i) {
     html +=
@@ -67,20 +67,20 @@ arr.forEach((a) => {
       textLineArr[i] +
       '</span>';
 
-    console.log(html);
+    /*  console.log(html); */
 
     a.innerHTML = html;
 
     a.classList.remove('textSplit', 'stop');
     /* a.classList = replaceClass(`${a.className}`, '') */
-    console.log('after removal : ' + a.classList);
+    /*  console.log('after removal : ' + a.classList); */
   }
 
-  console.log(a.textContent);
+  /*  console.log(a.textContent); */
 });
 
 arr.forEach((a) => {
-  console.log('observer classlist: ' + a.classList);
+  /*  console.log('observer classlist: ' + a.classList); */
   observer.observe(a);
 });
 
