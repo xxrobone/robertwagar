@@ -1,18 +1,10 @@
-.hamburger {
-    display: none;
-  }
-  
-  
-  /* ========== HAMBURGER NAV BUTTON ====================== */
-   
-  
   /* ========== HAMBURGER NAV BUTTON ====================== */
    .hamburger {
     display: block;
-    position: fixed;
+    position: absolute;
+    top: 1rem;
     right: 1rem;
     left: auto;
-    top: 120px;
     width: 46px;
     height: 32px;
     transform: all 1s ease-in-out;
@@ -71,7 +63,7 @@
     transform: translate(-50%, -50%) rotate(-45deg);
   } 
   
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 480px) {
     .hamburger {
       display: none;
   }

@@ -1,6 +1,6 @@
 const open = document.querySelector('.openBtn');
 const close = document.querySelector('.closeBtn');
-const menu = document.querySelector('nav');
+const menu = document.querySelector('.menu');
 /* const headline = document.querySelector('h1'); */
 
 // for the open close button
@@ -10,12 +10,12 @@ open.addEventListener('click', () => {
   open.style.visibility = 'hidden';
   close.style.visibility = 'visible';
   close.style.transform = 'rotate(90deg)';
-  menu.style.transform = 'translateX(0%)';
+  menu.classList.add('active');
 });
 
 close.addEventListener('click', () => {
   console.log('clicked close');
   open.style.visibility = 'visible';
   close.style.visibility = 'hidden';
-  menu.style.transform = 'translateX(110%)';
+  menu.classList.remove('active');
 });
