@@ -31,7 +31,7 @@ body {
 }
 
 main {
-    margin: 0 auto 0;
+    margin: 120px auto 0;
     display: grid;
     place-content: center;
     height: 100%;
