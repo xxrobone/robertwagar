@@ -10,7 +10,7 @@ menuBtn.addEventListener('click', () => {
 
 document.querySelector('header');
 
-let head = document.querySelector('header > h3');
+let head = document.querySelector('header > a > h3');
 
 var prevScrollpos = window.pageYOffset;
 window.onscroll = function () {

@@ -35,6 +35,7 @@ nav > ul > li {
     padding: 1vmin 2vmin;
     background-color: #282828;
     transition: all 0.3s ease-in-out;
+    cursor: pointer;
 }
 
 nav > ul > li:hover {
