@@ -21,10 +21,10 @@
   }
   
   .card_header {
+    position: absolute;
    /*  background-image: url('../mockup_lockerlegends.png'); */
     background-color: #181818;
-    background-size: cover;
-    position: absolute;
+    background-size: cover;   
     z-index: 10;
     top: 0;
     bottom: 0;
@@ -44,7 +44,7 @@
     width: 100%;
     height: auto;
     object-fit: cover;
-    object-position: center;
+    object-position: center center;
   }
   
   .card_header:hover {
@@ -108,7 +108,7 @@
   }
 
   .card_content p {
-    margin: 0;
+    margin: 1rem 0 0 0;
     font-size: 0.8rem;
     color: #ededed;
     margin-bottom: 1.5rem;
