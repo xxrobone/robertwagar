@@ -11,7 +11,8 @@ window.addEventListener('resize', function () {
 
 /* using interSection observer to check if text
 is on screen, then manipulating texts
-taking classes from parent element and adding to each span that is created in the forEach Loop lower down, i have to split to more functinos i think, still learning
+taking classes from parent element, adding to each word span
+that is created in the forEach Loop lower down
  */
 
 const observer = new IntersectionObserver(

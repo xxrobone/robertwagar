@@ -108,7 +108,7 @@ margin-top: 15vh;
 .loading {
     position: relative;
     margin: 4rem 0;
-    background-color: #bbbbbb;
+    background-color: #181818;
     width: 0;
     height: 10px;
     display: flex;

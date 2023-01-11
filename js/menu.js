@@ -1,11 +1,11 @@
 let menuBtn = document.querySelector('#hamburger');
-let nav = document.querySelector('nav > ul');
+let menu = document.querySelector('nav > ul');
 
 menuBtn.addEventListener('click', () => {
   console.log('clicked button');
   menuBtn.classList.toggle('active');
 
-  nav.classList.toggle('open');
+  menu.classList.toggle('open');
 });
 
 document.querySelector('header');
@@ -19,7 +19,7 @@ window.onscroll = function () {
     let nav = document.querySelector('nav');
     nav.style.top = '60px';
     document.querySelector('header').classList.remove('border');
-    head.style.color = 'inherit';
+    head.style.color = '#181818';
   } else {
     let nav = document.querySelector('nav');
     nav.style.top = '0px';
