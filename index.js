@@ -66,3 +66,25 @@ navline
     delay: anime.stagger(200),
     opacity: [0, 1],
   });
+
+let hi = document.querySelector('.hi');
+
+function getDown() {
+  hi.removeEventListener('mouseenter', getDown);
+  hi.textContent = 'What up?!';
+  setTimeout(() => {
+    hi.textContent = 'Hola!';
+  }, 1000);
+  setTimeout(() => {
+    hi.textContent = 'Tja!';
+  }, 2000);
+  setTimeout(() => {
+    hi.textContent = 'Terve!';
+  }, 3000);
+  setTimeout(() => {
+    hi.textContent = 'Hi there,';
+    hi.addEventListener('mouseenter', getDown);
+  }, 4000);
+}
+
+hi.addEventListener('mouseenter', getDown);
