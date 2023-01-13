@@ -8,14 +8,14 @@ const timeline = anime.timeline({
 });
 timeline
   .add({
-    scale: [0, 1],
-    duration: 600,
+    scale: 1,
+    duration: 300,
   })
   .add({
     targets: '.loading',
     opacity: [0, 1],
     width: ['0', '20vw'],
-    duration: 1200,
+    duration: 600,
     delay: 100,
     innerHTML: [0, 100 + '%'],
     round: 10,
