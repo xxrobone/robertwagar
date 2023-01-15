@@ -1,21 +1,5 @@
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    margin: 120px auto 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 100%;
-    width: 90%;
-    background-color: #ededed;
-}
-
-
+/* 
 h1 {
     font-family: CaviarDreams;
     font-size: clamp(3rem, 3.5vw, 4rem);
@@ -43,13 +27,13 @@ h4 {
 
 h2:first-child {
 margin-top: 6vh;
-}
+} */
 
 .intro {
     position: absolute;
     top: 0;
     left: 0;
-    z-index: 998;
+    z-index: 999;
     width: 100%;
     height: 100vh;
     display: flex;
@@ -75,7 +59,7 @@ margin-top: 6vh;
     margin: 4rem 0;
     background-color: #888;
     width: 0;
-    height: 10px;
+    height: 12px;
     display: flex;
     align-items: center;
     justify-content: center;

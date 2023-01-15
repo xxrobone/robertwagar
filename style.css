@@ -5,6 +5,7 @@
 @import url('./css/nav.css');
 @import url('./css/hamburger.css');
 @import url('./css/form.css');
+@import url('./css/intro.css');
 @import url('./css/section.css');
 
 
@@ -146,7 +147,7 @@ h2:first-child {
 margin-top: 6vh;
 }
 
-.intro {
+/* .intro {
     position: absolute;
     top: 0;
     left: 0;
@@ -182,13 +183,10 @@ margin-top: 6vh;
     display: flex;
     align-items: center;
     justify-content: center;
-
-    /* setting font and color and then setting innerHTML with anime.js */
-
     font-size: 0.8rem;
     color: #ededed;
 
-}
+} */
 /* 
 .loading > span {
     position: absolute;
