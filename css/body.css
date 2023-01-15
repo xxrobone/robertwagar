@@ -12,4 +12,5 @@
     transition: all 0.4s ease-in-out;
     font-family: 'Montserrat', sans-serif;
     overflow-x: hidden;
+    background: linear-gradient(120deg, rgb(20, 20, 20), #0f0f0f, #020101, #1b1b1b, #000000);
   }

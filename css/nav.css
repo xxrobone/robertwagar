@@ -6,7 +6,6 @@ nav {
     height: 60px;
     display: flex;
     background: linear-gradient(120deg, #181818 45%, #121212);
-    transition: all 0.4s ease;
 }
 
 nav.scroll {

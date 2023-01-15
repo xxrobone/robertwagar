@@ -56,7 +56,7 @@ arr.forEach((a) => {
   let html = '';
 
   let animation = a.classList;
-/*   console.log('animation class list: ' + animation); */
+  /*   console.log('animation class list: ' + animation); */
 
   for (i = 0; i < textLineArr.length; ++i) {
     html +=

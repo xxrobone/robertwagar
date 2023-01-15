@@ -1,69 +1,55 @@
 console.log('js connected');
-let intro = document.querySelector('.intro');
+
+// Hämta värde från localStorage om man besökt sidan tidigare
+// För att antingen visa intro sidan eller ta bort
+let hasVisitedBefore = JSON.parse(localStorage.getItem('hasVisitedBefore'));
+
+async function Visited(input) {
+  let visited = await input;
+
+  console.log('visited', visited);
+
+  if (visited === true) {
+    window.location.href;
+  } else {
+    window.location.href = window.location.href.replace(
+      'index.html',
+      'pages/intro.html'
+    );
+  }
+}
+
+window.onload = Visited(hasVisitedBefore);
 
 const timeline = anime.timeline({
-  targets: '.intro',
-  duration: 2500,
+  targets: '.main',
+  duration: 600,
   easing: 'easeOutSine',
 });
-timeline
-  .add({
-    scale: 1,
-    duration: 300,
-  })
-  .add({
-    targets: '.loading',
-    opacity: [0, 1],
-    width: ['0', '20vw'],
-    duration: 600,
-    delay: 100,
-    innerHTML: [0, 100 + '%'],
-    round: 10,
-  })
-  .add({
-    targets: '.intro_head',
-    translateY: ['-100vh', '0'],
-    delay: 100,
-    duration: 500,
-  })
-  .add({
-    targets: '.intro_subhead',
-    translateY: ['-100vh', '0'],
-    delay: 100,
-    duration: 500,
-  })
-  .add({
-    targets: '.main',
-    duration: 1000,
-    opacity: [0, 1],
-  })
-  .add({
-    targets: '.hamburger',
-    duration: 1000,
-    opacity: [0, 1],
-  })
-  .add({
-    translateY: '-100vh',
-    duration: 500,
-    complete: function () {
-      intro.remove();
-    },
-  });
+timeline.add({
+  opacity: [0, 1],
+  delay: 0,
+});
 
 const navline = anime.timeline({
   targets: '.nav',
-  duration: 1500,
+  duration: 600,
   easing: 'easeOutSine',
 });
 navline
   .add({
     opacity: [0, 1],
-    delay: 300,
+    delay: 0,
   })
   .add({
     targets: '.nav ul li',
     translateY: ['-30vh', '0'],
     delay: anime.stagger(200),
+    opacity: [0, 1],
+  })
+  .add({
+    targets: '.hamburger',
+    duration: 600,
     opacity: [0, 1],
   });
 
