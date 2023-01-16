@@ -5,12 +5,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/contact.css">
     <link rel="stylesheet" href="../style.css">
-    <script src="../js/menu.js" defer></script>
+    <script src="../js/menu.js" type="module" defer></script>
     <title>Contact - [kɹiːˌe͡ɪtˈɪvɪti]</title>
 </head>
 
-<body>
+<body class="body">
     <header>
         <a href="/">
             <h3>[kri ːeɪ ˈtɪvɪti]</h3>
@@ -32,9 +33,19 @@
         </div>
     </nav>
     <main>
-        <h1>CONTACT PAGE</h1>
+        <h1>CONTACT US</h1>
+        <form method="post" action="mailto:robert.wagar@edu.cmeducations.se">
+            <div>
+                <i class="fa-solid fa-envelope"></i>
+            </div>
+            <input type="text" id="name" placeholder="Name (required)" required>
+            <input type="email" id="email" placeholder="Email (required)" required>
+            <input type="text" id="subject" placeholder="Subject (required)" required>
+            <textarea placeholder="Message (required)" required></textarea>
+            <input type="submit" value="Send">
+        </form>
     </main>
-    <script src="../js/hamburger.js"></script>
+    <script src="../js/menu.js" defer type="module"></script>
 </body>
 
 </html>
