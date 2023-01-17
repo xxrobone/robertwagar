@@ -9,10 +9,12 @@ cardContainer.forEach((c) => {
 
     if (cardInfoBtn) {
       cardInfoBtn.parentNode.parentNode.classList.add('card_open');
+      cardInfoBtn.parentNode.children[0].style.opacity = '0.3';
     }
 
     if (cardLessBtn) {
       cardLessBtn.parentNode.parentNode.classList.remove('card_open');
+      cardLessBtn.parentNode.children[0].style.opacity = '1';
     }
   });
 });

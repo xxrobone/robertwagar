@@ -41,13 +41,15 @@
   .card_header .card_img {
     position: absolute;
     top: 30%;
+    left: 50%;
+    transform: translate(-50%) scale(0.8);
     margin: 0 auto;
     z-index: -1;
     width: 80%;
     height: auto;
     object-fit: cover;
     object-position: center center;
-    transition: transform 0.3s ease-in-out;
+    transition: transform 0.4s ease-in-out, opacity 0.5s ease;
   }
 
   .card_header:hover {
@@ -55,8 +57,10 @@
     cursor: pointer;
   }
 
-  .card_header:hover .card_img {
-    transform: scale(1.05);    
+  .card_header:hover .card_img,
+  .card_header:active .card_img {
+    transform-origin: bottom right 60px;
+    transform: scale(1.05) translate(-50%) skewY(5deg);    
   }
 
   .card:hover {
@@ -78,7 +82,7 @@
     position: absolute;
     top: 50px;
     margin: 0.5rem 0;
-    font-size: 0.8rem;
+    font-size: 1rem;
     color: #888;
     font-weight: 100;
   }
@@ -139,7 +143,7 @@
 
   .card_content p {
     margin: 1rem 0 0 0;
-    font-size: 0.8rem;
+    font-size: 0.85rem;
     color: #ededed;
     margin-bottom: 1.5rem;
     line-height: 1;
@@ -184,15 +188,60 @@
   }
   
 
-  
-  @media (min-width: 980px) {
-    .card {
-        height: 60vh;
+
+  @media (480px < width < 768px ) {
+
+    .card_header .card_img {
+      top: 10%;
+      left: 50%;
+      transform: translate(-50%) scale(0.7);
     }
 
     .card_content p {
-        margin-top: 1rem;
-        font-size: 1rem;
-        color: #ededed;
-      }
+      font-size: 1rem;
+    }
+
   }
+  
+  
+  @media (min-width: 768px) {
+    .card_header .card_img {
+      top: 0%;
+      left: 50%;
+      transform: translate(-50%) scale(0.7);
+    }
+
+    .card_content p {
+      font-size: 1.2rem;
+    }
+  }
+  
+  @media (min-width: 980px) {
+
+    .card_header .card_img {
+      top: 30%;
+      left: 50%;
+      transform: translate(-50%) scale(0.7);
+    }
+
+    .card_content p {
+      font-size: 0.8rem;
+    }
+  }
+  
+  @media (min-width: 1200px) {
+
+    .card_header .card_img {
+      top: 30%;
+      left: 50%;
+      transform: translate(-50%) scale(0.7);
+    }
+
+    .card_content p {
+      font-size: 1rem;
+    }
+  }
+
+  
+
+  
