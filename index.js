@@ -2,6 +2,7 @@ console.log('js connected');
 
 let intro = document.querySelector('.intro');
 let btn = document.querySelector('#enter_btn');
+let nav = document.querySelector('nav');
 
 // Hämta värde från localStorage om man besökt sidan tidigare
 // För att antingen visa intro sidan eller ta bort
@@ -68,50 +69,31 @@ btn.addEventListener('click', () => {
     },
   });
   localStorage.setItem('hasVisitedBefore', true);
+  const navline = anime.timeline({
+    targets: nav,
+    duration: 600,
+    easing: 'easeOutSine',
+  });
+  navline
+    .add({
+      targets: nav,
+      opacity: [0, 1],
+      delay: 0,
+    })
+    .add({
+      targets: '.nav ul li',
+      translateY: ['-30vh', '0'],
+      delay: anime.stagger(200),
+      opacity: [0, 1],
+    })
+    .add({
+      targets: '.hamburger',
+      duration: 300,
+      opacity: [0, 1],
+    });
 
   setTimeout(() => {}, 1000);
-
-  console.log(' href => ' + window.location.href);
-  console.log(' host => ' + window.location.host);
-  console.log(' hostname => ' + window.location.hostname);
-  console.log(' port => ' + window.location.port);
-  console.log(' protocol => ' + window.location.protocol);
-  console.log(' pathname => ' + window.location.pathname);
-  console.log(' hashpathname => ' + window.location.hash);
-  console.log(' search=> ' + window.location.search);
 });
-
-const timeline2 = anime.timeline({
-  targets: '.main',
-  duration: 600,
-  easing: 'easeOutSine',
-});
-timeline2.add({
-  opacity: [0, 1],
-  delay: 0,
-});
-
-const navline = anime.timeline({
-  targets: '.nav',
-  duration: 600,
-  easing: 'easeOutSine',
-});
-navline
-  .add({
-    opacity: [0, 1],
-    delay: 0,
-  })
-  .add({
-    targets: '.nav ul li',
-    translateY: ['-30vh', '0'],
-    delay: anime.stagger(200),
-    opacity: [0, 1],
-  })
-  .add({
-    targets: '.hamburger',
-    duration: 600,
-    opacity: [0, 1],
-  });
 
 let hi = document.querySelector('.hi');
 
@@ -134,3 +116,13 @@ function getDown() {
 }
 
 hi.addEventListener('mouseenter', getDown);
+
+/* 
+  console.log(' href => ' + window.location.href);
+  console.log(' host => ' + window.location.host);
+  console.log(' hostname => ' + window.location.hostname);
+  console.log(' port => ' + window.location.port);
+  console.log(' protocol => ' + window.location.protocol);
+  console.log(' pathname => ' + window.location.pathname);
+  console.log(' hashpathname => ' + window.location.hash);
+  console.log(' search=> ' + window.location.search); */
