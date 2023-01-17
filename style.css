@@ -1,10 +1,10 @@
 
-@import url('./css/fonts.css');
+@import url('./css/typography.css');
 @import url('./css/animations.css');
 @import url('./css/header.css');
 @import url('./css/nav.css');
 @import url('./css/hamburger.css');
-@import url('./css/form.css');
+@import url('./css/name_form.css');
 @import url('./css/intro.css');
 @import url('./css/section.css');
 
@@ -17,8 +17,13 @@
 --color-4: #41b3a3;
 --color-5: #553d67;
 
+--color-primary: #121212;
+--color-secondary: #fafafa;
+
 --color-gradient-bg: linear-gradient(120deg, rgb(20, 20, 20), #0f0f0f, #020101, #1b1b1b, #000000);
 --color-nav-bg: linear-gradient(120deg, #181818 45%, #121212);
+--color-bg: #ededed;
+--color-bg-secondary: #181818;
 }
 
 * {
@@ -54,7 +59,7 @@ main {
 
 .hero {
     height: calc(100vh - 120px);
-    padding: 6rem 0;
+    padding: 2rem 0 0;
 }
 
 .img_wrapper {
@@ -139,7 +144,7 @@ h2 {
 
 p,
 h4 {
-    font-family: var(--font-primary);
+    font-family: var(--font-primary-light);
     margin: 1rem 0;
     font-size: clamp(1.2rem, 1.5vw, 1.5rem);
     color: black;
