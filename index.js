@@ -7,19 +7,13 @@ let btn = document.querySelector('#enter_btn');
 // För att antingen visa intro sidan eller ta bort
 let hasVisitedBefore = JSON.parse(localStorage.getItem('hasVisitedBefore'));
 
-async function Visited(input) {
-  let visited = await input;
+console.log('visited', hasVisitedBefore);
 
-  console.log('visited', visited);
-
-  if (visited === true) {
-    intro.style.visibility = 'hidden';
-  } else {
-    intro.style.visibility = 'visible';
-  }
+if (!hasVisitedBefore) {
+  intro.style.visibility = 'visible';
+} else {
+  intro.style.visibility = 'hidden';
 }
-
-window.onload = Visited(hasVisitedBefore);
 
 const timeline = anime.timeline({
   targets: '.intro',

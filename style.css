@@ -16,6 +16,9 @@
 --color-3: #c38d9e;
 --color-4: #41b3a3;
 --color-5: #553d67;
+
+--color-gradient-bg: linear-gradient(120deg, rgb(20, 20, 20), #0f0f0f, #020101, #1b1b1b, #000000);
+--color-nav-bg: linear-gradient(120deg, #181818 45%, #121212);
 }
 
 * {
@@ -30,6 +33,7 @@ body {
     height: 100%;
     background-color: #ededed;
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 .darkmode {

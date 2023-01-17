@@ -1,11 +1,17 @@
 let menuBtn = document.querySelector('#hamburger');
 let menu = document.querySelector('nav > ul');
+let links = document.querySelectorAll('nav > ul > li');
 
 menuBtn.addEventListener('click', () => {
   console.log('clicked button');
   menuBtn.classList.toggle('active');
-
   menu.classList.toggle('open');
+
+  links.forEach((link, index) => {
+    link.style.animation = link.style.animation
+      ? ''
+      : `liFadeIn 0.5s ease forwards ${index / 10 + 0.5}s`;
+  });
 });
 
 document.querySelector('header');
