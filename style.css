@@ -61,7 +61,6 @@ main {
 .hero {
     margin: 0 auto;
     height: calc(80vh - 120px);
-    width: 100%;
     padding: 2rem 0 0;
 }
 

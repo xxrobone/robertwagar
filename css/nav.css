@@ -64,6 +64,14 @@ nav > ul > li:hover > a {
    color: #121212;
 }
 
+
+@media (480px < width < 768px) {
+
+    nav {
+        right: 2rem;
+    }
+}
+
 @media (min-width: 768px) {
 
     nav {
