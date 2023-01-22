@@ -17,26 +17,26 @@ that is created in the forEach Loop lower down
 
 const observer = new IntersectionObserver(
   (entries) => {
-    entries.forEach((entry) => {
-      let trgt = entry.target.className;
+    entries.forEach((e) => {
+      let trgt = e.target.className;
       trgt = '';
       /*  console.log('e target className: ' + trgt);
-      console.log('after change: ' + entry.target.classList); */
-      for (const child of entry.target.children) {
-        if (entry.isIntersecting) {
+      console.log('after change: ' + e.target.classList); */
+      for (const child of e.target.children) {
+        if (e.isIntersecting) {
           child.classList.add('animate');
           child.classList.remove('stop');
           /*  console.log('is intersecting child elem class: ' + child.classList); */
 
-          /* entry.target.classList.add('slideInLeft'); */
+          /* e.target.classList.add('slideInLeft'); */
         } else {
           child.classList.remove('animate');
           child.classList.add('stop');
           /*  child.style.transform = 'tranalsteX(-100vw)'; */
         }
       }
-      if (entry.isIntersecting) {
-        observer.unobserve(entry.target);
+      if (e.isIntersecting) {
+        observer.unobserve(e.target);
       } else {
       }
     });

@@ -98,21 +98,3 @@ nav > ul > li:hover > a {
         width: unset;
     }
 }
-
-/* 
-@keyframes liFadeIn {
-    0% {
-        opacity: 0;
-        transform: translateX(100%);
-    }
-
-    50% {
-        opacity: 0;
-        transform: translateX(100%);
-    }
-    100% {
-        opacity: 1;
-        transform: translateX(0%);
-    }
-}
- */
