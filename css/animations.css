@@ -15,6 +15,7 @@ span,
 span.textSplit {
     color: goldenrod;
     font-weight: 700;
+    letter-spacing: 4px;
 }
 
 span:nth-child(even) {
@@ -24,15 +25,16 @@ span:nth-child(even) {
 /* Slide Animations */
 .slideInLeft {
     -webkit-animation-name: slideInLeft;
-    animation-name: slideInLeft;
-	   
+    animation-name: slideInLeft;	   
 }
+
 .slideInLeft:nth-child(odd) {
     -webkit-animation-name: slideInLeft;
     animation-name: slideInLeft;
 	    -webkit-transform: translateX(100vw);
     transform: translateX(100vw);
 }
+
 @keyframes slideInLeft {
     from {
         -webkit-transform: translateX(-100vw);
@@ -67,36 +69,42 @@ to {
   animation-name: fastExit;
     transform-origin:bottom;
 }
+
 @keyframes fastExit {
    0% {
-
 }
  
   25% {
     transform:scale(1, .2)
   }
+
 50% {
-transform:scale(1, .2) translatex(100vw);
-  opacity:1;
+    transform:scale(1, .2) translatex(100vw);
+    opacity:1;
   }
  
-  99% {transform:scale(1, 0) translatex(0);
+  99% {
+    transform:scale(1, 0) translatex(0);
     opacity:0;}
 
 }
 
 .highlightText:nth-child(odd){  
+    padding:0 10px;
+    background: linear-gradient(to right, #575757 50%, transparent 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
     -webkit-animation-name: hilight;
-animation-name: hilight;
-background: linear-gradient(to right, #575757 50%, transparent 50%);
-background-size: 200% 100%;
-background-position:right bottom;
-padding:0 10px;
+    animation-name: hilight;
+
 }
+
 @keyframes hilight{
 0% {
 }
-100% {background-position:left bottom;}
+100% {
+    background-position: left bottom;
+}
 
 }
 
