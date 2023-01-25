@@ -59,3 +59,14 @@
     
 }
 }
+
+@media(min-width: 768px) {
+    
+.about_hero {
+    width: 58%;
+    height: auto;
+    left: 50%;
+    transform: translateX(-50%);
+    
+}
+}

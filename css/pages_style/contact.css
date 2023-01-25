@@ -26,8 +26,16 @@
 }
 
 #contact h1 {
+  position: absolute;
+  top: 30vh;
   color: white;
+  font-size: clamp(3rem, 3vw, 5rem);
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.837);
+}
+
+#contact h2 {
+  position: absolute;
+  top: 40vh;
 }
 
 #contact > main {
@@ -42,6 +50,54 @@
     background-color: transparent;
     color: white;
 }
+
+.contact_page_icons {
+  width: 60%;
+  position: absolute;
+  top: 50vh;
+  z-index: 50;
+  display: grid;
+  place-content: center;
+  overflow: hidden; 
+}
+
+.contact_page_icons .social {
+  padding: 1rem;
+  position: relative;
+  display: flex;
+  background-color: var(--color-bg);
+  height: fit-content;
+  transition: all .3s ease-in-out 0s;
+  filter: drop-shadow(1´0px 1px 2px rgba(39, 39, 39, 0.425)); 
+  z-index: 99;
+}
+
+.contact_page_icons .social .soc-item {
+  margin: 0.75rem 1rem;
+}
+
+.contact_page_icons .social .soc-icon {
+  z-index: 20;
+  color: #070707;
+  font-size: 2rem;
+  padding: 0.25rem;
+  transition: all .3s ease-in-out;  
+}
+
+
+
+.contact_page_icons .social .soc-item:hover {
+  color: white;
+  filter: drop-shadow(0px 2px 4px rgba(17, 17, 17, 0.432));
+  transform: scale(1.15);
+}
+
+.contact_page_icons .social .soc-item:hover .social {
+  background-color: var(--color-bg-secondary);
+}
+
+
+/* Form I used first... styling still here, to see just uncomment on the contact.html page */
 
 #contact > main > form {
     padding-left:2rem;

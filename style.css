@@ -30,11 +30,12 @@
 --color-bg-secondary: #181818;
 }
 
-* {
+*, *::before, *::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 
 body {
     width: 100%;
@@ -64,7 +65,7 @@ a {
 
 h1 {
     font-family: CaviarDreams;
-    font-size: clamp(3rem, 3.5vw, 4rem);
+    font-size: clamp(2rem, 2vw, 2.5rem);
     letter-spacing: 3px;
 }
 
@@ -89,11 +90,11 @@ h4 {
 .hero {
     margin: 0;
     padding: 2rem 0 0;
+    position: relative;
     width: 100%;
     height: calc(100vh - 120px);
     display: flex;
     flex-direction: column;
-    justify-content: center;
     object-fit: cover;
     object-position: center;
     /* background: linear-gradient(0deg, #ededed 50%, lightgray ); */
@@ -101,26 +102,40 @@ h4 {
 }
 
 .hero > img {
-    max-width: 85%;
+    width: 85%;
     height: auto;
-    align-self: center;
+    /* align-self: center; */
     filter: grayscale(100%);
 }
 
-.hero > h2,
-.hero > p {
-    text-align: center;
+.hero > h1,
+.hero > h4 {
+    text-align: left;
 }
 
-.hero > h2 {
+.hero > h1 {
     color: var(--color-secondary);
     text-shadow: 2px 2px 4px #000000;
     margin: 1rem 0;
 }
 
-.hero > p {
-    color: #888;
+.hero > h4 {
+    color: var(--color-primary);
 }
+
+.hello {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    bottom: 10vh;
+}
+
+
+.call_to_action {
+    position: absolute;
+    right: 5vw;
+    bottom: 10vh;
+  }
 
 .projects {
     width: 100%;
@@ -175,31 +190,58 @@ article h2 {
         width: 60%;
     }
     article {
-        width: 80%;
+        width: 60%;
       }
   
       section {
-        width: 80%;
+        width: 60%;
+      }
+
+      .projects {
+        width: 60%;
       }
   
       .projects_wrapper { 
         width: 100%;
         grid-template-columns: repeat(2, 1fr); 
     }
+
     .hero {
         width: 60%;
     }
+
     .hero > img {
-        max-width: 55%;
+        align-self: flex-end;
+        width: 55%;
+    }
+    
+    .call_to_action {
+        position: absolute;
+        right: 5vw;
+        bottom: 10vh;
     }
 }
 
+
 @media(min-width: 768px) {    
+    
     main {
         width: 80%;
     }
-.hero > img {
-    max-width: 65%;
-}
+
+    .hero > img {
+        align-self: center;
+        max-width: 65%;
+    }
 }
 
+
+@media (600px < width < 767px) {
+  
+    .call_to_action {
+      position: absolute;
+      right: 5vw;
+      bottom: 2vh;
+    }
+}
+      

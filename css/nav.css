@@ -92,11 +92,10 @@ nav > ul > li:hover > a {
     color: #121212;
 }
 
-
 .nav_item > .submenu {
     position: absolute;
     top: 0;
-    left: 0;
+    left: 100%;
     display: none;
     flex-direction: column;
 }
