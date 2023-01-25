@@ -129,17 +129,29 @@ function changeNavData() {
 }
 
 let links = [...document.querySelectorAll('.nav_item')];
+let submenuLinks = [...document.querySelectorAll('.submenu_item')];
 links.forEach((l) => {
   l.addEventListener('mouseenter', (e) => {
-    if (e.target.hasChilren) {
-      if (e.target.childNodes[1].className == 'submenu') {
-        document.querySelector('.submenu').classList.add('active');
-        console.log('submenu ' + e.target.childNodes[1].className);
-      } else {
-        return;
-      }
+    console.log(e.target.childNodes[1].className);
+    if (!e.target.childNodes[1].className === 'submenu') {
     } else {
-      return;
+      document.querySelector('.submenu').classList.add('active');
     }
+  });
+
+  l.addEventListener('mouseleave', (e) => {
+    if (!e.target.childNodes[1].className === 'submenu') {
+    } else {
+      document.querySelector('.submenu').classList.remove('active');
+    }
+  });
+});
+
+submenuLinks.forEach((s) => {
+  s.addEventListener('click', () => {
+    console.log('clickediclackadi');
+    document
+      .querySelector('.projects')
+      .scrollTo({ top: 300, behavior: 'smooth' });
   });
 });

@@ -101,10 +101,10 @@ nav > ul > li:hover > a {
     flex-direction: column;
 }
 
-/* 
-.nav_item > .submenu {
+
+.nav_item > .submenu.active {
     display: flex;
-} */
+} 
 
 
 .submenu_item {
@@ -175,4 +175,8 @@ nav > ul > li:hover > a {
     display: none;
     flex-direction: column;
 }
+
+.nav_item > .submenu.active {
+    display: flex;
+} 
 }
