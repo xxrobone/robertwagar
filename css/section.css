@@ -54,4 +54,8 @@ section > h2:first-child:after {
   section {
     height:calc(fit-content + 5vh);
   }
+
+  section.top {
+    margin-bottom: 5rem;
+  }
 }

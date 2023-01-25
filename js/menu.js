@@ -1,6 +1,5 @@
 let menuBtn = document.querySelector('#hamburger');
 let menu = document.querySelector('nav > ul');
-let links = document.querySelectorAll('nav > ul > li');
 
 menuBtn.addEventListener('click', () => {
   console.log('clicked button');

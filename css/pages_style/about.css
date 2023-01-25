@@ -4,13 +4,17 @@
     box-sizing: border-box;
 }
 
+#about > header > a > h3 {
+    color: white;
+}
+
 #about main {
     margin-top: 100vh;
     position: relative;
 }
 
 
-.hero {
+.about_hero {
     margin: 0;
     padding: 2rem 0 0;
     position: absolute;
@@ -22,9 +26,8 @@
     flex-direction: column;
     justify-content: center;
     background-color:#ededed;
-    background-image: url('../assets/images/robertwagar.webp');
+    background-image: url('../../assets/images/robertwagar.webp');
     background-repeat: no-repeat;
-    background-size: 100%;
     background-position: center center;
     /* background-attachment: fixed; */
     /* background: linear-gradient(0deg, #ededed 50%, lightgray ); */

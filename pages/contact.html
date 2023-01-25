@@ -6,13 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/d3412194f0.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="../css/contact.css">
+    <link rel="stylesheet" href="../css/pages_style/contact.css">
     <link rel="stylesheet" href="../style.css">
     <script src="../js/menu.js" type="module" defer></script>
     <title>[kɹiːˌe͡ɪtˈɪvɪti] - contact</title>
 </head>
 
-<body class="body">
+<body id="contact">
+    <div class="contact_bg"></div>
     <header>
         <a href="/">
             <h3>[kri ːeɪ ˈtɪvɪti]</h3>
@@ -20,10 +21,10 @@
     </header>
     <nav class="nav">
         <ul class="menu ">
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="./about.html">About</a></li>
-            <li><a href="./projects.html">Projects</a></li>
-            <li><a href="./contact.html">Contact</a></li>
+            <li class="nav_item"><a href="../index.html" class="nav_item_link">Home</a></li>
+            <li class="nav_item"><a href="./about.html" class="nav_item_link">About</a></li>
+            <li class="nav_item"><a href="../index.html#projects" class="nav_item_link">Projects</a></li>
+            <li class="nav_item"><a href="./contact.html" class="nav_item_link">Contact</a></li>
         </ul>
         <div class="hamburger_wrapper">
             <div class="hamburger" id="hamburger">
@@ -34,7 +35,7 @@
         </div>
     </nav>
     <main>
-        <h1>CONTACT US</h1>
+        <h1>CONTACT</h1>
         <form method="post" action="mailto:robert.wagar@edu.cmeducations.se">
             <i class="fa-solid fa-envelope"></i>
             <input type="text" id="name" placeholder="Name (required)" required>
@@ -44,6 +45,10 @@
             <input type="submit" value="Send">
         </form>
     </main>
+    <footer>
+        <h4>&#9426; ROB - ONE - 2022</h4>
+    </footer>
+
     <script src="../js/menu.js" defer type="module"></script>
 </body>
 

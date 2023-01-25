@@ -1,16 +1,36 @@
-.body {
+#contact {
     width: 100%;
-    min-height: 100vh;
-    height: 100%;
-    background-color: #121212;
+    height: 100vh;
+    /* background-color: #121212; */
+    background-color: transparent;
     overflow-x: hidden;
 }
 
-.body > header > a > h3 {
-    color: white !important; 
+.contact_bg {
+  width: inherit;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url('../../assets/images/meetingroom.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom center;
+  filter: grayscale(80%)  blur(5px); 
+  z-index: -1;
 }
 
-.body > main {
+#contact > header > a > h3 {
+    color: white !important; 
+    text-shadow: 1px 1px 1px black ;
+}
+
+#contact h1 {
+  color: white;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.837);
+}
+
+#contact > main {
     margin: 120px auto 0;
     display: flex;
     flex-direction: column;
@@ -18,20 +38,24 @@
     justify-content: center;
     height: 100vh;
     width: 90%;
-    background-color: #000000;
+    /* background-color: #000000; */
+    background-color: transparent;
     color: white;
 }
 
-.body form {
+#contact > main > form {
     padding-left:2rem;
     padding-right:2rem;
     padding-top:4rem;
     margin: 0.8rem auto;
+    position:relative;
+    background-color: rgba(0, 0, 0, .35);
     border: 1px solid #888;
     border-radius: 5px;
-    position:relative;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .25), inset 0 0 1px 0px rgba(207, 207, 207, 0.649);   
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
     z-index: 1;
-    background-color:black;
   }
 
   form > i {
