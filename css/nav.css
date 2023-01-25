@@ -132,7 +132,54 @@ nav > ul > li:hover > a {
     z-index: 10;
    color: #181818;
 }
+/* New social icons in nav */
 
+
+.nav_socials {
+    width: 100%;
+    position: absolute;
+    top: 80vh;
+    display: grid;
+    place-content: center;
+    z-index: 100;
+  }
+  
+  .nav_socials .social {
+    padding: 1rem;
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: unset;
+    transition: all .3s ease-in-out 0s;
+    z-index: 99;
+  }
+
+  .nav_socials .social form button {
+    background-color: transparent;
+    cursor: pointer;
+  }
+
+  .nav_socials .social .soc-item {
+    margin: 0.75rem 1rem;
+  }
+  
+  .nav_socials .social .soc-icon {
+    z-index: 20;
+    color: rgb(0, 0, 0);
+    filter: drop-shadow(1px 1px 1px rgb(255, 255, 255));
+    font-size: 2rem;
+    padding: 0.25rem;
+    transition: all .3s ease-in-out;  
+  }
+  
+  
+  
+  .nav_socials .social .soc-item:hover {
+    color: white;
+    filter: drop-shadow(0px 2px 4px rgb(0, 0, 0));
+    transform: scale(1);
+  }
+  
 
 @media (480px < width < 768px) {
     nav {
@@ -167,15 +214,19 @@ nav > ul > li:hover > a {
         width: 100px;
     }
     
-.nav_item > .submenu {
-    position: absolute;
-    top: 100%;
-    left: 0%;
-    display: none;
-    flex-direction: column;
-}
+    .nav_item > .submenu {
+        position: absolute;
+        top: 100%;
+        left: 0%;
+        display: none;
+        flex-direction: column;
+    }
 
-.nav_item > .submenu.active {
-    display: flex;
-} 
+    .nav_item > .submenu.active {
+        display: flex;
+    } 
+
+    .nav_socials {
+        visibility: hidden;
+    }
 }
