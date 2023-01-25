@@ -51,4 +51,11 @@
 
 @media(min-width: 768px) {
     
+.about_hero {
+    width: 78%;
+    height: auto;
+    left: 50%;
+    transform: translateX(-50%);
+    
+}
 }
