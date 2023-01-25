@@ -51,7 +51,6 @@
     
 .about_hero {
     width: 78%;
-    height: auto;
     left: 50%;
     transform: translateX(-50%);
     
@@ -62,7 +61,6 @@
     
 .about_hero {
     width: 58%;
-    height: auto;
     left: 50%;
     transform: translateX(-50%);
     
