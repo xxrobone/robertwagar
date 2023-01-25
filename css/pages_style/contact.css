@@ -30,12 +30,13 @@
   top: 30vh;
   color: white;
   font-size: clamp(3rem, 3vw, 5rem);
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.837);
+  text-shadow: 1px 1px black;
 }
 
 #contact h2 {
   position: absolute;
   top: 40vh;
+  text-shadow: 1px 1px black;
 }
 
 #contact > main {

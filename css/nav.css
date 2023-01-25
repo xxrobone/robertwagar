@@ -139,6 +139,8 @@ nav > ul > li:hover > a {
     width: 100%;
     position: absolute;
     top: 80vh;
+    left: 50%;
+    transform: translateX(-50%);
     display: grid;
     place-content: center;
     z-index: 100;
