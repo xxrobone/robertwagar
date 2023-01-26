@@ -46,7 +46,6 @@ if (window.innerWidth > 768) {
         c.style.stroke = '#ededed';
       });
     }
-
     prevScrollpos = currentScrollpos;
   };
 }
