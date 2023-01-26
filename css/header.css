@@ -32,7 +32,6 @@ header > a > h3 {
     font-weight: 100;
 }
 
-
 @keyframes headerIntro {
     from {
         opacity: 0;
