@@ -237,6 +237,7 @@ article h2 {
     }
 }   
       
+/* iphone se media Qs */
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2),
                     only screen and (min--moz-device-pixel-ratio: 2),
@@ -258,6 +259,7 @@ article h2 {
 
     p,h4 {
         font-size: 1rem;
+        line-height: 1.5rem;
     }
 
     .hero > img {
