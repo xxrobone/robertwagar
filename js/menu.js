@@ -29,7 +29,8 @@ if (window.innerWidth > 768) {
       let nav = document.querySelector('nav');
       nav.style.top = '60px';
       nav.classList.remove('border');
-      head.style.color = '#181818';
+      head.style.color = '#121212';
+      header.classList.add('header_bg');
       coffee.forEach((c) => {
         c.style.fill = '#181818';
         c.style.stroke = '#181818';
@@ -39,6 +40,7 @@ if (window.innerWidth > 768) {
       nav.style.top = '0px';
       nav.classList.add('border');
       head.style.color = '#fafafa';
+      header.classList.remove('header_bg');
       coffee.forEach((c) => {
         c.style.fill = '#fafafa';
         c.style.stroke = '#ededed';
