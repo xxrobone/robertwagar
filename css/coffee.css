@@ -8,6 +8,7 @@
   fill: #361f12;
   stroke: rgb(236, 78, 10);
   stroke-width: 4px;
+  transition: all 0.3s ease-in-out;
 }
 
 .coffee_cup .line1 {
