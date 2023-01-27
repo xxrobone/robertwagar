@@ -10,7 +10,7 @@ I choose to do the project in "vanilla" js, html , css, anime.js (as my "plugin"
 
 ## __Preview__
 
-<img src="./portfolio_preview.png" alt="portolio preview" width="250"> &nbsp; &nbsp;
+<img src="./portfolio_preview.png" alt="portolio preview" width="100%"> &nbsp; &nbsp;
 
 <img src="./portfolio_mobile.png" alt="portolio preview" width="150"> &nbsp; &nbsp;
 
