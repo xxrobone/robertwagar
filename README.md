@@ -28,6 +28,13 @@ I choose to do the project in "vanilla" js, html , css, anime.js (as my "plugin"
 
 ### Issues, thoughts, fixes
 
+- contact page not 100% done with design, click on envelope to see animation and see the form
+
+- Dynamic nav on index page not 100% bug free 
+
+- a and button errors due to not setting title, using icons
+(will fix)
+
 - css is fun, not too hard &
 at the same time not easy at all, can get messy ;)
 
@@ -43,10 +50,15 @@ Definitly need to get better and deep dive at one point
 
 - i work in separate project testing before adding, i like this, i could just do  more branches, but I kind of like having it locally for now. Probably will add branches so i can keep some ideas and test online
 
+- Iphone and safari has been a bit of a problem when setting viewport height and width. 
+
+- Project tested on laptop 14 inch and desktop 27 inch screen, Samsung 22, Samsung 10, Iphone 13, Huawei 10, Iphone se and Ipad pro 2018 edition and an LG 55 oled TV. (lol) 
+
 ## navigations dropdown
 
 I've took a try to make it dynamic (got a challenge from Alexis), I also host one on codepen and you can find this in my navigations repo. 
 It is not 100% dynamic, but on its way. 
+Only using this on index page, other pages has set nav in html and css
 
 
 ## Project tech
