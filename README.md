@@ -12,8 +12,6 @@ I choose to do the project in "vanilla" js, html , css, anime.js (as my "plugin"
 
 <img src="./portfolio_preview.png" alt="portolio preview" width="250"> &nbsp; &nbsp;
 
-</br>
-
 <img src="./portfolio_mobile.png" alt="portolio preview" width="150"> &nbsp; &nbsp;
 
 </br>
