@@ -1,7 +1,7 @@
 /* menu was in dynamic nav first but using it here instead */
 
 let links = [...document.querySelectorAll('.nav_item')];
-let submenuLinks = [...document.querySelectorAll('.submenu_item')];
+
 links.forEach((l) => {
   l.addEventListener('mouseenter', (e) => {
     /* console.log(e.target.childNodes[1].className); */
