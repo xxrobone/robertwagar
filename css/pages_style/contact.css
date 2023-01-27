@@ -91,6 +91,10 @@ transition: all 0.4s ease 1.2s,
 
 }
 
+.contact_form_wrapper .form {
+  width: 80%;
+}
+
 .contact_info_container {
 padding: 1rem;
 height: 0;  
