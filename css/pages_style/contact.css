@@ -501,6 +501,13 @@ top: 30vh;
   font-size: 0.8rem;
 }
 
+.greet_wrapper {
+  margin: 1rem auto 0.5rem;
+  width: 60%;  
+  left: 10vw;
+  top: 0vh;  
+}
+
 .greet {
   font-size: 1rem;
 }
