@@ -25,6 +25,7 @@
 --color-secondary: #fafafa;
 
 --color-gradient-bg: linear-gradient(120deg, rgb(20, 20, 20), #0f0f0f, #020101, #1b1b1b, #000000);
+--color-gradient-sidebar: linear-gradient(30deg, rgb(20, 20, 20), #0f0f0f, #020101, #1b1b1b, #000000);
 --color-nav-bg: linear-gradient(120deg, #181818 45%, #121212);
 --color-bg: #ededed;
 --color-bg-secondary: #181818;

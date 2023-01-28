@@ -8,6 +8,10 @@ tried out so far
 
 I choose to do the project in "vanilla" js, html , css, anime.js (as my "plugin")
 
+## For CME
+
+This github pages version is the most updated, the hosted on my domain is not updated with all new features. 
+
 ## __Preview__
 
 <img src="./portfolio_preview.png" alt="portolio preview" width="100%"> &nbsp; &nbsp;
