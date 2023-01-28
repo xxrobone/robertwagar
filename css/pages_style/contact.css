@@ -427,7 +427,7 @@ transition: all 0.2s ease;
 
 .greet {
   font-family: var(--font-primary);
-  font-size: 0.8rem;
+  font-size: 0.7rem;
   background-color: var(--color-bg-secondary);
 }
 
@@ -499,5 +499,9 @@ top: 30vh;
 
 .form_answer {
   font-size: 0.8rem;
+}
+
+.greet {
+  font-size: 1rem;
 }
 }
