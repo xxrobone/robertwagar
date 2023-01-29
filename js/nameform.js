@@ -21,10 +21,10 @@ if (!userName || userName === undefined || userName === '') {
 function showMsg(newName) {
   if (newName === '' || newName === null || newName === undefined) {
     form.remove();
-    answer.textContent = `Hi there Friend, nice to meet you :D`;
+    answer.textContent = `Friend, nice to meet you :D`;
   } else {
     form.remove();
-    answer.textContent = `Hi there ${newName}, nice to meet you :D`;
+    answer.textContent = `${newName}, nice to meet you :D`;
     localStorage.setItem('userName', JSON.stringify(newName));
   }
 }
