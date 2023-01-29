@@ -15,7 +15,7 @@ if (!userName || userName === undefined || userName === '') {
   });
 } else {
   form.remove();
-  answer.textContent = `Hi again ${userName}, how can I help you today? :D`;
+  answer.textContent = `${userName} how may I help You?`;
 }
 
 function showMsg(newName) {

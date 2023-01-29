@@ -38,6 +38,7 @@ scroll-padding-top: 2rem;
 --color-bg-btn-dark-hover: #bdbdbd;
 
 --social-icons: #e5e5e5;
+--loader: #888;
 
 --color-gradient-bg: linear-gradient(120deg, rgb(20, 20, 20), #0f0f0f, #020101, #1b1b1b, #000000);
 --color-gradient-sidebar: linear-gradient(30deg, rgb(20, 20, 20), #0f0f0f, #020101, #1b1b1b, #000000);
