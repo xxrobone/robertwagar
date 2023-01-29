@@ -24,8 +24,8 @@ let coffee = [...document.querySelectorAll('.coffee_cup > path')];
 if (window.innerWidth > 768) {
   var prevScrollpos = window.pageYOffset;
   window.onscroll = function () {
-    let nav = document.querySelector('nav');
     var currentScrollpos = window.pageYOffset;
+    let nav = document.querySelector('nav');
     if (prevScrollpos > currentScrollpos) {
       nav.style.top = '60px';
       nav.classList.remove('border');
@@ -50,13 +50,13 @@ if (window.innerWidth > 768) {
 }
 
 if (window.innerWidth < 768) {
+  var prevScrollpos = window.pageYOffset;
   header.classList.add('header_bg_mobile');
   head.style.color = 'white';
   coffee.forEach((c) => {
     c.style.fill = '#fafafa';
     c.style.stroke = '#ededed';
   });
-  var prevScrollpos = window.pageYOffset;
   window.onscroll = function () {
     let nav = document.querySelector('nav');
     var currentScrollpos = window.pageYOffset;
