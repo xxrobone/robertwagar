@@ -34,13 +34,14 @@ This github pages version is the most updated, the hosted on my domain is not up
 
 - contact page not 100% done with design, click on envelope to see animation and see the form
 
-- Dynamic nav on index page not 100% bug free 
+- Dynamic nav on index page not 100% bug free (only using it now on this project, will change it)
 
 - a and button errors due to not setting title, using icons
 (will fix)
 
-- css is fun, not too hard &
-at the same time not easy at all, can get messy ;)
+- I'm mixing sizes between px, rems and ems and this is not recommended, I wanted to try to learn the differences and also try out, hope this is ok. 
+
+- css is fun, can get messy at times ;)
 
 - I understand why people use bootstrap and tailwind, to work faster and have pre set styling. 
 
